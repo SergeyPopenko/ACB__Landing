@@ -66,10 +66,37 @@
                 seconds = (String(seconds).length >= 2) ? seconds : '0' + seconds;
 
             // based on the date change the refrence wording
-            var ref_days = (days === 1) ? 'day' : 'days',
-                ref_hours = (hours === 1) ? 'hour' : 'hours',
-                ref_minutes = (minutes === 1) ? 'minute' : 'minutes',
-                ref_seconds = (seconds === 1) ? 'second' : 'seconds';
+            if (days === 1 || days === 21 || days === 31 || days === 41) {
+              var ref_days = "день";
+            } else if (days > 1 && days < 5 || days > 21 && days < 25 || days > 31 && days < 35 || days > 41 && days < 45) {
+              ref_days = "дня";
+            } else {
+              ref_days = "дней";
+            }
+
+            if (hours === 1 || hours === 21) {
+              var ref_hours = "час";
+            } else if (hours === 2 || hours === 3 || hours === 4 || hours === 22 || hours === 23 || hours === 24) {
+              ref_hours = "часа";
+            } else {
+              ref_hours = "часов";
+            }
+
+            if (minutes === 1 || minutes === 21 || minutes === 31 || minutes === 41 || minutes === 51) {
+              var ref_minutes = "минута";
+            } else if (minutes > 1 && minutes < 5 || minutes > 21 && minutes < 25 || minutes > 31 && minutes < 35 || minutes > 41 && minutes < 45 || minutes > 51 && minutes < 55) {
+              ref_minutes = "минуты";
+            } else {
+              ref_minutes = "минут";
+            }
+
+            if (seconds === 1 || seconds === 21 || seconds === 31 || seconds === 41 || seconds === 51) {
+              var ref_seconds = "секунда";
+            } else if (seconds > 1 && seconds < 5 || seconds > 21 && seconds < 25 || seconds > 31 && seconds < 35 || seconds > 41 && seconds < 45 || seconds > 51 && seconds < 55) {
+              ref_seconds = "секунды";
+            } else {
+              ref_seconds = "секунд";
+            }
 
             // set to DOM
             container.find(".days").text(days);
