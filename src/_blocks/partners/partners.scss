@@ -1,3 +1,32 @@
-.partners{
+.partners {
+  font-size: 14px;
+  padding: 3.5em 0 2.1em;
+  background: #fff;
+}
 
+.partners__wrap {
+  @include wrap(1200px);
+}
+
+.partners__title {
+  @include title($margin: 0 0 0.62em);
+}
+
+.partners__slider{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.partners__item{
+  width: 25%;
+  padding: 20px 10px;
+  margin: 0 2%;
+  &--smaller{
+    width: 20%;
+  }
+  &--bigger{
+    width: 36%;
+  }
 }
