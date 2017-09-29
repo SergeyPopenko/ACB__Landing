@@ -1,20 +1,20 @@
 @font-face {
-  font-family: "Evolventa";
-  font-weight: 400;
+  font-family: "ProximaNova";
+  font-weight: 900;
 
-  src: url(#{$font-path}/evolventa/10359.eot);
-  src: url(#{$font-path}/evolventa/10359.eot) format("embedded-opentype"),
-  url(#{$font-path}/evolventa/10359.woff2) format("woff2"),
-  url(#{$font-path}/evolventa/10359.woff) format("woff"),
-  url(#{$font-path}/evolventa/10359.ttf) format("truetype");
+  src: url(/fonts/proximanova/ProximaNova-Extrabld.eot);
+  src: url(/fonts/proximanova/ProximaNova-Extrabld.eot) format("embedded-opentype"),
+       url(/fonts/proximanova/ProximaNova-Extrabld.woff2) format("woff2"),
+       url(/fonts/proximanova/ProximaNova-Extrabld.woff) format("woff"),
+       url(/fonts/proximanova/ProximaNova-Extrabld.ttf) format("truetype");
 }
-@font-face {
-  font-family: "Evolventa";
-  font-weight: 700;
 
-  src: url(#{$font-path}/evolventa/10360.eot);
-  src: url(#{$font-path}/evolventa/10360.eot) format("embedded-opentype"),
-  url(#{$font-path}/evolventa/10360.woff2) format("woff2"),
-  url(#{$font-path}/evolventa/10360.woff) format("woff"),
-  url(#{$font-path}/evolventa/10360.ttf) format("truetype");
+@font-face {
+  font-family: 'Plumb';
+  font-weight: 700;
+  src: url(/fonts/font/plumb/plumbbold.eot);
+  src: url(/fonts/font/plumb/plumbbold.eot) format('embedded-opentype'),
+       url(/fonts/font/plumb/plumbbold.woff2) format('woff2'),
+       url(/fonts/font/plumb/plumbbold.woff) format('woff'),
+       url(/fonts/font/plumb/plumbbold.ttf) format('truetype');
 }

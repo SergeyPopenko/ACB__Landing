@@ -1,12 +1,10 @@
 html {
   box-sizing: border-box;
-
-  font-size: $font-size-global;
 }
 body {
-  background: $bg-global;
-
-  color: $col-global;
+  font: 14px/18px "ProximaNova", "Helvetica", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+  background: $white;
+  color: $dark;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
