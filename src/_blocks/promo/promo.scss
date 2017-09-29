@@ -1,3 +1,16 @@
-.promo{
+.promo {
+  background: $dark;
+
+}
+
+.promo__wrap {
+  @include wrap(1200px);
+}
+
+.promo__img{
+  max-height: 600px;
+  height: 100vh;
+  background: url(/img/promo/promo.jpg) 50% 50% no-repeat;
+  background-size: cover;
 
 }
