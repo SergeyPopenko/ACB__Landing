@@ -1,5 +1,5 @@
 .promo {
-  background: $dark;
+  background: #1f2023;
 
 }
 
@@ -7,7 +7,7 @@
   @include wrap(1200px);
 }
 
-.promo__img{
+.promo__img {
   max-height: 600px;
   height: 100vh;
   background: url(/img/promo/promo.jpg) 50% 50% no-repeat;

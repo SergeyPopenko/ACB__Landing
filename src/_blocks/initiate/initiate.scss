@@ -1,3 +1,37 @@
-.initiate{
+.initiate {
+  background: #1f2023;
+  font: 60px/72px "Plumb", "Helvetica", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+  font-weight: 600;
+  color: $white;
+}
 
+.initiate__wrap {
+  @include wrap(1200px);
+}
+
+.initiate__title {
+  font-size: 0.6em;
+  line-height: 1.333;
+  color: $red;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+}
+
+.initiate__name {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.initiate__img {
+  position: relative;
+  max-height: 600px;
+  height: 100vh;
+  background: url(/img/initiate/initiate.jpg) 100% 50% no-repeat;
+}
+
+.initiate__text {
+  position: absolute;
+  left: 0;
+  padding-bottom: 8.5%;
+  bottom: 0;
 }
