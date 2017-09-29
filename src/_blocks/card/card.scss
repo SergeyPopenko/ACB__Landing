@@ -1,27 +1,48 @@
-.card {
-
-}
-
 .card__item {
-
+  margin: 0 34px;
 }
 
 .card__fighters {
-
+  display: flex;
+  margin-bottom: 3.36em;
+  align-items: flex-start;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .card__fighter {
-
+  width: 43%;
+  border-top: 0.43em solid $red;
+  border-bottom: 1px solid $red;
+  margin-top: 0.5em;
+  padding: 0.43em 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &:first-of-type {
+    text-align: right;
+    .card__fighter-name {
+      justify-content: flex-end;
+    }
+  }
 }
 
 .card__fighter-name {
-
+  min-height: 2.57em;
+  line-height: 1.29;
+  display: flex;
+  margin: 0;
+  text-transform: uppercase;
+  vertical-align: middle;
+  align-items: center;
 }
 
 .card__fighter-info {
-
+  flex-shrink: 0;
+  width: 14%;
+  text-align: center;
 }
 
 .card__fighter-weight {
-
+  margin: 0 0 0.8em;
 }
