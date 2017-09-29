@@ -34,6 +34,12 @@
   list-style: none;
   display: flex;
   justify-content: center;
+  li {
+    width: 4em;
+  }
+  .ticket__seperator {
+    width: auto;
+  }
 }
 
 .ticket__numbers {
