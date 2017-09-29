@@ -1,0 +1,6 @@
+@mixin title($color: $dark, $margin: 0) {
+  color: inherit;
+  font: 60px/1 "Plumb", "Helvetica", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+  text-transform: uppercase;
+  margin: $margin;
+}
