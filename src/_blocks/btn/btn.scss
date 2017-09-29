@@ -1,12 +1,13 @@
 .btn {
+  font: 18px/1 "ProximaNova", "Helvetica", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+  display: inline-block;
+  vertical-align: middle;
   background: $red;
   text-decoration: none;
   text-transform: uppercase;
   color: $white;
   border: 2px solid $red;
   transition: 0.3s;
-  font-size: 18px;
-  line-height: 1;
   letter-spacing: 0.025em;
   padding: 0.78em;
   min-width: 13.33em;

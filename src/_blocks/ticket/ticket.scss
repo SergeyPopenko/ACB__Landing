@@ -1,0 +1,51 @@
+.ticket {
+  font: 24px/1 "Plumb", "Helvetica", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+  color: $white;
+  background: #1d1d21;
+  text-align: center;
+  padding: 2em 0 1.58em;
+}
+
+.ticket__wrap {
+  @include wrap;
+}
+
+.ticket__title {
+  @include title($margin: 0 0 0.35em);
+}
+
+.ticket__address {
+  text-transform: uppercase;
+  margin: 0 0 1.67em;
+}
+
+.ticket__left {
+  margin: 0 0 0.79em;
+  font-size: 1.17em;
+  color: $red;
+  text-transform: uppercase;
+}
+
+.ticket__countdown {
+  font-size: 20px;
+  line-height: 1;
+  margin: 0 0 1.75em;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.ticket__numbers {
+  font-size: 3em;
+}
+
+.ticekt__ref-text {
+  text-transform: lowercase;
+  margin: 0;
+}
+
+.ticket__seperator {
+  font-size: 3em;
+  margin: 0 0.2em;
+}

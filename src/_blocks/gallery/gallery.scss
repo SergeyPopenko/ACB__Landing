@@ -1,7 +1,7 @@
 .gallery {
   background: #f3f3f3;
   font-size: 16px;
-  padding: 2.5em 0 6em;
+  padding: 2.5em 0 6.7em;
 }
 
 .gallery__wrap {
@@ -9,7 +9,7 @@
 }
 
 .gallery__title {
-  @include title($margin: 0 0 0.58em);
+  @include title($margin: 0 0 0.72em);
 }
 
 .gallery__slider-wrap {
