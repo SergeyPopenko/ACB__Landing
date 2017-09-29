@@ -12,16 +12,17 @@
   align-items: flex-start;
   justify-content: center;
   position: relative;
-  &::after {
-    content: "";
-    width: 521px;
-    height: 550px;
-    position: absolute;
-    bottom: -2.14em;
-    right: -24%;
-    z-index: -1;
-    background: url(/img/fight/bg.png) no-repeat 50% 50%;
-  }
+
+}
+
+.fight__bg {
+  width: 575px;
+  height: 663px;
+  position: absolute;
+  bottom: -10.36em;
+  right: -24%;
+  z-index: -1;
+  background: url(/img/fight/bg.png) no-repeat 50% 50%;
 }
 
 .fight__main {

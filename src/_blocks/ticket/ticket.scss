@@ -3,15 +3,29 @@
   color: $white;
   background: #1d1d21;
   text-align: center;
-  padding: 2em 0 1.58em;
 }
 
 .ticket__wrap {
   @include wrap;
+  position: relative;
+  z-index: 5;
+  padding-top: 2em;
+  padding-bottom: 1.58em;
+  overflow: hidden;
 }
 
 .ticket__title {
   @include title($margin: 0 0 0.35em);
+}
+
+.ticket__bg {
+  width: 600px;
+  height: 597px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  right: -4.92%;
+  background: url(/img/timer/bg.jpg) no-repeat 50% 50%;
 }
 
 .ticket__address {

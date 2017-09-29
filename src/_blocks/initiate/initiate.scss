@@ -15,18 +15,51 @@
   color: $red;
   margin: 0 0 10px 0;
   text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: 2s;
+  .active & {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .initiate__name {
   margin: 0;
   text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(80px);
+  transition: 1.5s;
+  .active & {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .initiate__img {
   position: relative;
   max-height: 600px;
   height: 100vh;
-  background: url(/img/initiate/initiate.jpg) 100% 50% no-repeat;
+  z-index: 5;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-image: url(/img/initiate/initiate.jpg);
+    opacity: 0;
+    transition: 5s;
+  }
+  .active & {
+    &::after {
+      opacity: 1;
+    }
+  }
 }
 
 .initiate__text {
