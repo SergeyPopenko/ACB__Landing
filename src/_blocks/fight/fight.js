@@ -3,6 +3,6 @@ $(".fight__slider").slick({
   slidesToShow: 2,
   slidesToScroll: 1,
   dots: false,
-  prevArrow: $(".fight__btn--prev"),
-  nextArrow: $(".fight__btn--next"),
+  prevArrow: $(".fight__slider-wrap .slider__btn--prev"),
+  nextArrow: $(".fight__slider-wrap .slider__btn--next"),
 });

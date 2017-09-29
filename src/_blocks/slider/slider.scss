@@ -1,0 +1,33 @@
+.slider {
+  position: relative;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  border: 0;
+  background: none;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  outline: none;
+  svg {
+    display: block;
+    fill: $dark;
+    transition: 0.3s;
+    &:hover {
+      fill: $red;
+    }
+    &:active {
+      fill: darken($red, 10%);
+    }
+  }
+  &--prev {
+    left: 0;
+  }
+
+  &--next {
+    right: 0;
+  }
+}
