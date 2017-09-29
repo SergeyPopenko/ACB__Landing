@@ -1,5 +1,10 @@
 .slider {
   position: relative;
+  .partners__btn{
+    .slider__btn{
+      display: none;
+    }
+  }
 }
 
 .slider__btn {
@@ -29,5 +34,17 @@
 
   &--next {
     right: 0;
+  }
+}
+
+
+@media #{$s}{
+  .slider {
+    position: relative;
+    .partners__btn{
+      .slider__btn{
+        display: block;
+      }
+    }
   }
 }
