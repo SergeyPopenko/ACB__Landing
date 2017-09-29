@@ -1,21 +1,27 @@
 .fight {
-
+  padding: 5em 0 2.14em;
+  font-size: 14px;
+  color: $dark;
 }
 
 .fight__wrap {
-
+  @include wrap;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .fight__main {
-
+  width: 40%;
 }
 
 .fight__card {
-
+  width: 57%;
 }
 
 .fight__title {
-
+  @include title($margin: 0 0 0.62em)
 }
 
 .fight__main-fighters {
