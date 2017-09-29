@@ -2,6 +2,7 @@
   padding: 5em 0 2.14em;
   font-size: 14px;
   color: $dark;
+  overflow: hidden;
 }
 
 .fight__wrap {
@@ -10,6 +11,17 @@
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
+  position: relative;
+  &::after {
+    content: "";
+    width: 521px;
+    height: 550px;
+    position: absolute;
+    bottom: -2.14em;
+    right: -24%;
+    z-index: -1;
+    background: url(/img/fight/bg.png) no-repeat 50% 50%;
+  }
 }
 
 .fight__main {
