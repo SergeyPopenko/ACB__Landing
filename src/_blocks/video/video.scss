@@ -1,18 +1,13 @@
 .video {
   font-size: 14px;
-  padding: 5em 0 2.14em;
+  padding: 3.5em 0 2.1em;
   overflow: hidden;
   background: #fff;
-}
-
-.video__title {
-  @include title($margin: 0 0 0.62em);
 }
 
 .video__wrap {
   @include wrap(1200px);
   position: relative;
-  padding-bottom: 30px;
    &::after {
     content: "";
     width: 521px;
@@ -22,6 +17,10 @@
     left: -15%;
     background: url(/img/video/bg.png) no-repeat 50% 50%;
   }
+}
+
+.video__title {
+  @include title($margin: 0 0 0.62em);
 }
 
 .video__wraper {
