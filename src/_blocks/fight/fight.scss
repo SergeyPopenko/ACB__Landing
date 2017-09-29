@@ -2,6 +2,7 @@
   padding: 5em 0 2.14em;
   font-size: 14px;
   color: $dark;
+  overflow: hidden;
 }
 
 .fight__wrap {
@@ -9,67 +10,124 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
+  position: relative;
+  &::after {
+    content: "";
+    width: 521px;
+    height: 550px;
+    position: absolute;
+    bottom: -2.14em;
+    right: -24%;
+    z-index: -1;
+    background: url(/img/fight/bg.png) no-repeat 50% 50%;
+  }
 }
 
 .fight__main {
   width: 40%;
+  margin-bottom: 3em;
 }
 
 .fight__card {
   width: 57%;
+  margin-left: auto;
+  margin-bottom: 3em;
 }
 
 .fight__title {
-  @include title($margin: 0 0 0.62em)
+  @include title($margin: 0 0 0.62em);
 }
 
 .fight__main-fighters {
-
+  display: flex;
+  position: relative;
+  justify-content: space-between;
 }
 
 .fight__main-item {
-
+  width: 47%;
+  text-align: center;
 }
 
 .fight__main-img {
-
+  max-height: 222px;
+  overflow: hidden;
+  border-bottom: 0.43em solid $red;
+  margin-bottom: 2px;
+  img {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 .fight__main-name {
-
+  font-size: 1.71em;
+  line-height: 1.08;
+  text-transform: uppercase;
+  padding-bottom: 0.17em;
+  border-bottom: 1px solid $red;
+  margin: 0 0 2px
 }
 
 .fight__main-weight {
-
+  margin: 0;
+  font-size: 1.71em;
+  line-height: 1;
 }
 
 .fight__vs {
-
+  text-transform: uppercase;
+  color: $red;
+  font-size: 1em;
+  line-height: 1;
+  margin: 0;
   &--big {
-
+    font-size: 1.71em;
+    position: absolute;
+    bottom: 2em;
+    z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
 .fight__slider-wrap {
-
+  position: relative;
+  padding: 0 6%;
+  overflow: hidden;
 }
 
 .fight__slider {
-
-}
-
-.fight__slider-btn {
-
+  margin: 0 -34px
 }
 
 .fight__btn {
-
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  border: 0;
+  background: none;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  outline: none;
+  svg {
+    display: block;
+    fill: $dark;
+    transition: 0.3s;
+    &:hover {
+      fill: $red;
+    }
+    &:active {
+      fill: darken($red, 10%);
+    }
+  }
   &--prev {
-
+    left: 0;
   }
 
   &--next {
-
+    right: 0;
   }
 }
