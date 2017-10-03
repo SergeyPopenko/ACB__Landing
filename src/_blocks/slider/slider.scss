@@ -41,9 +41,13 @@
 @media #{$s}{
   .slider {
     position: relative;
-    .partners__btn{
-      .slider__btn{
-        display: block;
+    .slider__btn {
+      width: 25px;
+      height: 25px;
+      z-index: 12;
+      svg {
+        height: 100%;
+        width: 100%;
       }
     }
   }

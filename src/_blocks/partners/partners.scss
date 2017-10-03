@@ -12,21 +12,53 @@
   @include title($margin: 0 0 0.62em);
 }
 
-.partners__slider{
+.partners__slider {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.partners__item{
+.partners__item {
   width: 25%;
   padding: 20px 10px;
   margin: 0 2%;
-  &--smaller{
+  &--smaller {
     width: 20%;
   }
-  &--bigger{
+  &--bigger {
     width: 36%;
   }
 }
+
+@media #{$s}{
+  .partners{
+    .slick-initialized{
+      .slick-slide {
+        vertical-align:middle;
+      }
+    }
+    @media #{$s}{
+      .slider {
+        .partners__btn{
+          .slider__btn{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .partners__item {
+    width: 48%;
+    // padding: 20px 10px;
+    margin: 0 0.5%;
+    &--smaller {
+      width: 40%;
+    }
+    &--bigger {
+      width: 52%;
+    }
+  }
+}
+
+

@@ -5,4 +5,14 @@ if ($(".countdown").length) {
   });
 }
 
-
+(function(){
+  var flag = 1;
+  $(window).on("scroll", function(){
+    if (flag) {
+      if ($(this).scrollTop() + window.innerHeight - $(".ticket").outerHeight()/2 > $(".ticket").offset().top) {
+        flag = 0;
+        $(".ticket").addClass("active");
+      }
+    }
+  });
+})();

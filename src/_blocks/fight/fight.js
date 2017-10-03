@@ -5,4 +5,12 @@ $(".fight__slider").slick({
   dots: false,
   prevArrow: $(".fight__slider-wrap .slider__btn--prev"),
   nextArrow: $(".fight__slider-wrap .slider__btn--next"),
+  responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
 });

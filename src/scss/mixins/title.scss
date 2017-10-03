@@ -4,4 +4,11 @@
   text-transform: uppercase;
   margin: $margin;
   text-align: center;
+  @media #{$t} {
+    font-size: 48px;
+  }
+  @media #{$s} {
+    font-size: 36px;
+  }
 }
+

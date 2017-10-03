@@ -12,3 +12,16 @@
 // pauseButton.addEventListener("click", function() {
 //   player.api("pause");
 // });
+
+
+(function(){
+  var flag = 1;
+  $(window).on("scroll", function(){
+    if (flag) {
+      if ($(this).scrollTop() + window.innerHeight - $(".video").outerHeight()/2 > $(".video").offset().top) {
+        flag = 0;
+        $(".video").addClass("active");
+      }
+    }
+  });
+})();

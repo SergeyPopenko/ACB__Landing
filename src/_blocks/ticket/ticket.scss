@@ -26,6 +26,21 @@
   z-index: -1;
   right: -4.92%;
   background: url(/img/timer/bg.jpg) no-repeat 50% 50%;
+  opacity: 0;
+  transition: 3s;
+  .active & {
+    opacity: 1;
+  }
+}
+
+.ticket__cost{
+  font-size: 1.6em;
+  text-transform: uppercase;
+  margin: 0 0 0.9em 0;
+  span{
+    font-size: 1.9em;
+    color: $red;
+  }
 }
 
 .ticket__address {
@@ -68,4 +83,56 @@
 .ticket__seperator {
   font-size: 3em;
   margin: 0 0.2em;
+}
+
+
+@media #{$s} {
+  .ticket {
+    font-size: 20px;
+  }
+
+  .ticket__bg {
+    width: auto;
+    height: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url(/img/timer/bg.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    @media #{$l} {
+      background-size: contain;
+    }
+  }
+
+  .ticket__cost {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin: 0 0 0.9em 0;
+    span{
+      font-size: 1.7em;
+      color: $red;
+    }
+  }
+
+  .ticket__address {
+    font-size: 0.8em;
+    line-height: 1.88em;
+  }
+
+  .ticket__numbers {
+    font-size: 2em;
+  }
+
+  .ticket__seperator{
+    font-size: 2em;
+  }
+
+  .ticekt__ref-text {
+     font-size: 0.8em;
+  }
+
+  .ticket__countdown{
+    margin: 0 0 2.0em;
+  }
 }

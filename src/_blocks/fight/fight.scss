@@ -103,3 +103,77 @@
 }
 
 
+@media #{$t} {
+    .fight__main {
+    width: 48%;
+  }
+
+  .fight__card {
+    width: 48%;
+  }
+}
+
+@media #{$s} {
+  .fight {
+    font-size: 16px;
+    padding: 1.5em 0 2.14em;
+    .card__fighters {
+      margin-bottom: 2.06em;
+    }
+
+    .card__fighter {
+      border-top:  0.25em solid #ff0000;
+      border-bottom: 2px solid #ff0000;
+    }
+
+    .slider {
+      .slider__btn {
+        &--prev {
+          left: -5px;
+        }
+        &--next {
+          right: -5px;
+        }
+      }
+    }
+  }
+
+  .fight__main {
+    width: 100%;
+    margin-bottom: 2.7em;
+  }
+
+  .fight__card {
+    width: 100%;
+  }
+
+  .fight__vs {
+    &--big {
+      font-size: 1.125em;
+    }
+  }
+
+  .fight__main-name{
+    border-bottom: 2px solid #ff0000;
+    font-size: 1.125em;
+    min-height: 45px;
+  }
+
+  .fight__main-weight {
+    font-size: 1.125em;
+  }
+
+  .fight__main-img {
+    border-bottom: 0.25em solid #ff0000;
+  }
+
+
+  .fight__bg {
+    width: 320px;
+    height: 480px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: url(/img/fight/mobile_bg.png) no-repeat 50% 50%;
+  }
+}
