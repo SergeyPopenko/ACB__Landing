@@ -3,15 +3,17 @@
   color: $white;
   background: #1d1d21;
   text-align: center;
+  // padding: 5em 0 4.1em;
 }
 
 .ticket__wrap {
   @include wrap;
   position: relative;
   z-index: 5;
-  padding-top: 2em;
-  padding-bottom: 1.58em;
+  // padding-top: 2em;
+  // padding-bottom: 1.58em;
   overflow: hidden;
+  padding: 70px 0 57px;
 }
 
 .ticket__title {
@@ -20,12 +22,14 @@
 
 .ticket__bg {
   width: 600px;
-  height: 597px;
+  // height: 597px;
   position: absolute;
   top: 0;
+  bottom: 0;
   z-index: -1;
   right: -4.92%;
   background: url(/img/timer/bg.jpg) no-repeat 50% 50%;
+  background-size: cover;
   opacity: 0;
   transition: 3s;
   .active & {
@@ -39,7 +43,7 @@
   margin: 0 0 0.9em 0;
   span{
     font-size: 1.9em;
-    color: $red;
+    color: $gold;
   }
 }
 
@@ -51,7 +55,7 @@
 .ticket__left {
   margin: 0 0 0.79em;
   font-size: 1.17em;
-  color: $red;
+  color: $gold;
   text-transform: uppercase;
 }
 
@@ -111,7 +115,7 @@
     margin: 0 0 0.9em 0;
     span{
       font-size: 1.7em;
-      color: $red;
+      color: $gold;
     }
   }
 

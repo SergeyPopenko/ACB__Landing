@@ -1,8 +1,9 @@
 .fight {
-  padding: 5em 0 2.14em;
+  // padding: 5em 0 4.1em;
   font-size: 14px;
   color: $dark;
   overflow: hidden;
+  padding: 70px 0 57px;
 }
 
 .fight__wrap {
@@ -38,6 +39,7 @@
 
 .fight__title {
   @include title($margin: 0 0 0.62em);
+  color: $gold;
 }
 
 .fight__main-fighters {
@@ -54,7 +56,7 @@
 .fight__main-img {
   max-height: 222px;
   overflow: hidden;
-  border-bottom: 0.43em solid $red;
+  border-bottom: 0.43em solid $gold;
   margin-bottom: 2px;
   img {
     display: inline-block;
@@ -67,7 +69,7 @@
   line-height: 1.08;
   text-transform: uppercase;
   padding-bottom: 0.17em;
-  border-bottom: 1px solid $red;
+  border-bottom: 1px solid $gold;
   margin: 0 0 2px
 }
 

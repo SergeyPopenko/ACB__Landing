@@ -1,36 +1,21 @@
 .video {
   font-size: 14px;
-  padding: 3.5em 0 2.1em;
+  // padding: 5em 0 4.1em;
   overflow: hidden;
   background: #fff;
 }
 
 .video__wrap {
   @include wrap(1200px);
+  padding: 70px 0 57px;
   position: relative;
   z-index: 5;
-   &::after {
-    content: "";
-    // width: 521px;
-    // height: 550px;
-    position: absolute;
-    bottom: -2.14em;
-    left: -15%;
-    right: 0;
-    top: 0;
-    background: url(/img/video/bg.png) no-repeat 0% 50%;
-    background-size: contain;
-    opacity: 0;
-    transition: 3s;
-    z-index: -1;
-    .active & {
-      opacity: 1;
-    }
-  }
+
 }
 
 .video__title {
   @include title($margin: 0 0 0.62em);
+  color: $gold;
 }
 
 .video__wraper {
@@ -61,6 +46,16 @@
   }
 }
 
+.video__bg {
+  width: 575px;
+  height: 663px;
+  position: absolute;
+  bottom: -57px;
+  left: -24%;
+  z-index: -1;
+  background: url(/img/video/bg.png) no-repeat 50% 50%;
+}
+
 @media #{$t} {
   .video__wraper {
     width:100%;
@@ -76,15 +71,6 @@
 
   .video__wrap{
      padding: 2em 0 2.1em;
-    &::after {
-      background-size: contain;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-
-      background: url(/img/video/mobile_bg.png) no-repeat 100% 100%;
-    }
   }
 
    @media #{$l}{
@@ -93,26 +79,4 @@
     }
   }
 }
-//  @media #{$s} {
-//   .video__wrap {
-//     &::after {
-//       content: "";
-//       width: auto;
-//       height: auto;
-//       position: absolute;
-//       bottom: auto;
-//       background-size: contain;
-//       left: 0;
-//       top: 0;
-//       right: 0;
-//       bottom: 0;
-//       background: url(/img/video/mobile_bg.png) no-repeat 50% 50%;
 
-//     }
-//   }
-// }
-// @media #{$m480} {
-//   .video__wraper {
-//     width:100%;
-//   }
-// }
