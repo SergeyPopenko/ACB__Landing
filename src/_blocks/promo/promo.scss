@@ -8,9 +8,20 @@
 }
 
 .promo__img {
-  max-height: 600px;
-  height: 100vh;
-  background: url(/img/promo/promo.jpg) 50% 50% no-repeat;
+  // max-height: 600px;
+  height: 85vh;
+  background: url(/img/promo/promo1.jpg) 50% 50% no-repeat;
   background-size: cover;
 
+}
+
+
+@media #{$t} and #{$p}{
+  .promo__img {
+    // max-height: 600px;
+    height: 75vh;
+    background: url(/img/promo/promo1__mobile.jpg) 50% 50% no-repeat;
+    background-size: contain;
+
+  }
 }

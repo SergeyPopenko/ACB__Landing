@@ -124,8 +124,8 @@
     }
 
     .card__fighter {
-      border-top:  0.25em solid #ff0000;
-      border-bottom: 2px solid #ff0000;
+      border-top:  0.25em solid $gold;
+      border-bottom: 2px solid $gold;
     }
 
     .slider {
@@ -156,7 +156,7 @@
   }
 
   .fight__main-name{
-    border-bottom: 2px solid #ff0000;
+    border-bottom: 2px solid $gold;
     font-size: 1.125em;
     min-height: 45px;
   }
@@ -166,7 +166,7 @@
   }
 
   .fight__main-img {
-    border-bottom: 0.25em solid #ff0000;
+    border-bottom: 0.25em solid $gold;
   }
 
 

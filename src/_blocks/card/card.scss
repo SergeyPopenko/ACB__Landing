@@ -2,20 +2,36 @@
   margin: 0 34px;
 }
 
+.card__img{
+  height: 80px;
+  text-align: center;
+  img{
+    height: 100%;
+    width: auto;
+  }
+}
+
 .card__fighters {
   display: flex;
-  margin-bottom: 3.36em;
+  margin-bottom: 0.3em;
   align-items: flex-start;
   &:last-of-type {
     margin-bottom: 0;
   }
 }
 
-.card__fighter {
+.card__container {
   width: 43%;
+  // padding-top: 80px;
+}
+
+.card__fighter {
+  // width: 43%;
+  width: 100%;
   border-top: 0.43em solid $gold;
   border-bottom: 1px solid $gold;
-  margin-top: 0.5em;
+  margin-top: 0;
+  margin-bottom: 0.3em;
   padding: 0.43em 0;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -41,6 +57,7 @@
   flex-shrink: 0;
   width: 14%;
   text-align: center;
+  padding-top: 80px;
 }
 
 .card__fighter-weight {
