@@ -1,7 +1,18 @@
 if ($(".countdown").length) {
+  var countryOffset = new Date().getTimezoneOffset()/60,
+      dateTime = document.querySelector(".ticket__address time").dateTime,
+      tournamentDate = new Date(dateTime),
+      tournamentDateString = "" + (tournamentDate.getMonth() + 1) + "/" + tournamentDate.getDate() + "/" + tournamentDate.getFullYear() + " " + tournamentDate.getHours() + ":" + tournamentDate.getMinutes() + ":" + tournamentDate.getSeconds();
+
+  if (countryOffset < 0) {
+    countryOffset = Math.abs(countryOffset);
+  } else {
+    countryOffset = -countryOffset;
+  }
+
   $(".countdown").downCount({
-    date: "2/19/2018 19:00:00",
-    offset: +3
+    date: tournamentDateString,
+    offset: countryOffset
   });
 }
 
