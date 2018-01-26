@@ -16,7 +16,7 @@ if ($("[data-paroller-factor]").length) {
     head.insertBefore(script, head.firstChild);
   }
   if (window.innerWidth > 767) {
-    loadScript("/js/paroller.min.js", function() {
+    loadScript("/wp-content/themes/slmma/js/paroller.min.js", function() {
       $(window).paroller();
     });
   }
