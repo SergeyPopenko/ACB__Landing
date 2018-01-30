@@ -9,10 +9,16 @@
 
 .promo__img {
   // max-height: 600px;
-  height: 85vh;
-  background: url(/img/promo/promo1.png) 50% 50% no-repeat #d4cccc;
-  background-size: cover;
+  // height: 85vh;
+  // background: url(/img/promo/promo1.png) 50% 50% no-repeat #d4cccc;
+  // background-size: cover;
   // background-color: #d4cccc;
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    margin: 0 auto;
+  }
 
 }
 
@@ -20,9 +26,9 @@
 @media #{$t} and #{$p}{
   .promo__img {
     // max-height: 600px;
-    height: 80vh;
-    background: url(/img/promo/promo1__mobile.png) 50% 50% no-repeat #d4cccc;
-    background-size: contain;
+    // height: 80vh;
+    // background: url(/img/promo/promo1__mobile.png) 50% 50% no-repeat #d4cccc;
+    // background-size: contain;
 
   }
 }
